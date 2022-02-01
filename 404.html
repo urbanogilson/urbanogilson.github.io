@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="redirect" http-equiv="refresh" content="0;url=https://gilsonurbano.com/" />
+  <link rel="canonical" href="gilsonurbano.com/" />
+</head>
+
+<body>
+  <h1>
+    The page been moved to <a href="gilsonurbano.com/" id="url">gilsonurbano.com/</a>
+  </h1>
+</body>
+<script>
+  const uri = window.location.pathname.substr(1)
+  const url = document.getElementById("url");
+  url.href = "https://gilsonurbano.com/" + uri
+  url.innerHTML = "gilsonurbano.com/" + uri
+  document.querySelector('meta[name="redirect"]').setAttribute("content", "0;url=https://gilsonurbano.com/" + uri);
+</script>
+
+</html>
